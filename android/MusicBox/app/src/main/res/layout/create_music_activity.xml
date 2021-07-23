@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="歌曲的名字"
+            android:textColor="#ADD8E6"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ADD8E6"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="一拍音符"
+            android:textColor="#ADD8E6"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/yinfu_rdg"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/erfenyinfu"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="二分音符"
+                android:textColor="#ADD8E6"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/sifenyinfu"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:checked="true"
+                android:text="四分音符"
+                android:textColor="#ADD8E6"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/bafenyinfu"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="八分音符"
+                android:textColor="#ADD8E6"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="一节拍数"
+            android:textColor="#ADD8E6"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/paishu_rdg"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sanpai"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="3拍"
+                android:textColor="#ADD8E6"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/sipai"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:checked="true"
+                android:text="4拍"
+                android:textColor="#ADD8E6"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/wupai"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="5拍"
+                android:textColor="#ADD8E6"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="#FF00CED1"
+            android:text="确认"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:text="\@del"
+        android:textSize="50sp" />
+</RelativeLayout>

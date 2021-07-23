@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_look"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/look_music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF000000"
+        android:textSize="40sp"/>
+    <TextView
+        android:id="@+id/fenzi"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/fenxian"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/fenzi"
+        android:textSize="20sp"
+        android:text="/"/>
+    <TextView
+        android:id="@+id/fenmu"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/fenxian"
+        android:textSize="20sp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/look_music_name"
+        android:layout_above="@+id/fx"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <GridLayout
+            android:id="@+id/xml_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </GridLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/fx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:text="\@del"
+        android:textSize="50sp" />
+</RelativeLayout>

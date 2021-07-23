@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/appback"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_music_lib"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/round_button"
+        android:textColor="#FF000000"
+        android:textSize="20sp"
+        android:text="曲库" />
+
+    <Button
+        android:id="@+id/btn_music_new"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn_music_lib"
+        android:layout_alignLeft="@+id/btn_music_lib"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_button"
+        android:textColor="#FF000000"
+        android:textSize="20sp"
+        android:text="新建" />
+
+    <Button
+        android:id="@+id/Vivy"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn_music_new"
+        android:layout_alignLeft="@+id/btn_music_new"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/mazmoto"
+        android:textColor="#FFF0F8FF"
+        android:textSize="20sp"
+        android:text="Vivy" />
+
+    <ImageView
+        android:id="@+id/imag1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@id/btn_music_lib"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:textSize="50sp"
+        android:text="\@del" />
+</RelativeLayout>
